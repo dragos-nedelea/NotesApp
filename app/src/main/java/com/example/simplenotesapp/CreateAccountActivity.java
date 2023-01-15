@@ -66,12 +66,12 @@ public class CreateAccountActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // create acc is done
-                            Toast.makeText(CreateAccountActivity.this, "Successfully created account, Check email to verify", Toast.LENGTH_SHORT).show();
+                            Utility.showToast(CreateAccountActivity.this, "Successfully created account, Check email to verify");
                             firebaseAuth.getCurrentUser().sendEmailVerification();
                             firebaseAuth.signOut();
                         }else {
                             //failure
-                            Toast.makeText(CreateAccountActivity.this, task.getException().getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                            Utility.showToast(CreateAccountActivity.this, task.getException().getLocalizedMessage());
 
                         }
                     }
