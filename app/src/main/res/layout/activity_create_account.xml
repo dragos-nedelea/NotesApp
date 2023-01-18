@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/email_edit_text"
             android:inputType="textEmailAddress"
-            android:hint="Email Id"
+            android:hint="Email"
             android:textSize="20sp"
             android:background="@drawable/roundedcorner"
             android:padding="16dp"

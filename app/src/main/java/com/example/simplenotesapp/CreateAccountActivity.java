@@ -3,6 +3,7 @@ package com.example.simplenotesapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.opengl.Visibility;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -39,6 +40,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         loginBtnTextView = findViewById(R.id.login_text_view_btn);
 
         createAccountButton.setOnClickListener(v-> CreateAccount());
+        loginBtnTextView.setOnClickListener((v)->startActivity(new Intent(CreateAccountActivity.this,LoginActivity.class)));
 
 
     }

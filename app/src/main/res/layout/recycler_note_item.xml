@@ -16,6 +16,7 @@
         android:text="note title"
         android:textColor="@color/black"
         android:textSize="18sp"
+        android:textStyle="bold"
         android:layout_marginVertical="3dp"/>
     <TextView
         android:layout_width="match_parent"
