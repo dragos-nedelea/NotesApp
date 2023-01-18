@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/notes_content_text"
             android:hint="Content"
-            android:minLines="15"
+            android:minLines="11"
             android:gravity="top"
             android:textSize="28sp"
             android:layout_marginVertical="8dp"
@@ -71,5 +71,17 @@
             android:textColor="@color/black"
             />
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_text_view_btn"
+        android:text="Delete note"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textColor="#FF0000"
+        />
 
 </RelativeLayout>

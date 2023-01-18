@@ -4,6 +4,9 @@ import com.google.firebase.Timestamp;
 
 public class Note {
 
+
+
+
     String title;
     String content;
     Timestamp timestamp;
@@ -11,6 +14,8 @@ public class Note {
     public Note() {
 
     }
+
+
 
     public String getTitle() {
         return title;
